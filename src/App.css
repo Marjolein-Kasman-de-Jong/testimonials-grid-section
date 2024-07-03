@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------------
+1. Grid
+2. Grid items
+---------------------------------------------------------------------- */
+
+/* 1. Grid */
+
+main {
+  width: 87.2%;
+  margin: 71px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1150px) {
+  main {
+    width: 77.08%;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 30px;
+  }
+}
+
+/* 2. Grid items */
+
+.grid-row-span-2 {
+  grid-row: 1 / 3;
+  grid-column-start: 4;
+}

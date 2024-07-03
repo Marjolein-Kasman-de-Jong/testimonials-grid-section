@@ -1,0 +1,91 @@
+/* ----------------------------------------------------------------------
+1. CSS reset
+2. Colors
+3. Typography
+4. Background
+---------------------------------------------------------------------- */
+
+/* 1. CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* 2. Colors */
+
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --test: #48556A;
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --box-shadow: rgba(72, 85, 106, 0.25);
+  --avatar-border: #A775F1;
+}
+
+/* 3. Typography */
+
+html {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.dark {
+  color: var(--very-dark-grayish-blue);
+}
+
+.light {
+  color: var(--white);
+}
+
+.regular-paragraph {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  opacity: .7;
+}
+
+.title,
+.author-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.author-status {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: normal;
+  opacity: .5;
+}
+
+/* 4. Background */
+
+body {
+  background-color: var(--light-grayish-blue);
+}
+
+@media screen and (min-width: 1150px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#root {
+  width: 100%;
+}

@@ -1,0 +1,103 @@
+/* ----------------------------------------------------------------------
+1. Review
+2. Author information
+3. Title
+4. Background-colors
+5. Background image
+6. Column and row span
+7. Animation
+---------------------------------------------------------------------- */
+
+/* 1. Review */
+
+article {
+    padding: 26px 32px 32px 32px;
+    border-radius: 8px;
+    box-shadow: 40px 60px 50px -47px var(--box-shadow);
+}
+
+/* 2. Author information */
+
+.author-container {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.author-container img {
+    border-radius: 50%;
+}
+
+.author-container img.border {
+    border: 2px solid var(--avatar-border);
+}
+
+hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* 3. Title */
+
+h2 {
+    margin: 18px 0 16px 0;
+}
+
+
+/* 4. Background-colors */
+
+.moderate-violet {
+    background-color: var(--moderate-violet);
+}
+
+.very-dark-grayish-blue {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.very-dark-blackish-blue {
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.white {
+    background-color: var(--white);
+}
+
+/* 5. Background image */
+
+article:first-of-type {
+    background-image: url("../../assets/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 32px);
+}
+
+@media screen and (min-width: 1150px) {
+    article:first-of-type {
+        background-position-x: calc(100% - 80px);
+    }
+}
+
+/* 6. Column and row span */
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+/* 7. Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+article {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
